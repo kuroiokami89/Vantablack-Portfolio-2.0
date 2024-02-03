@@ -1,0 +1,88 @@
+<div id="works">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="work" id="slide1">
+          <div class="slide-1-text">
+            <div class="stack" style="--stacks: 3">
+              <span style="--index: 0"><h2>Personal projects</h2></span>
+              <span style="--index: 1"><h2>Personal projects</h2></span>
+              <span style="--index: 2"><h2>Personal projects</h2></span>
+            </div>
+            <p>
+              I have built various projects to fit different aspects of the
+              client's business.
+            </p>
+            <a href="#slide2">Swipe left to see my projects</a>
+          </div>
+          <div><img src="pics\YmYu.gif" /></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div id="slide2" class="work slide-container">
+          <div>
+            <span>PORTFOLIO THEME</span>
+            <div class="stack" style="--stacks: 3">
+              <span style="--index: 0"><h2>Portfolio Modern Template</h2></span>
+              <span style="--index: 1"><h2>Portfolio Modern Template</h2></span>
+              <span style="--index: 2"><h2>Portfolio Modern Template</h2></span>
+            </div>
+            <p>
+              Server rendered, progressive web application for online fitness &
+              health coaching. Providing workout programs, nutritions plans,
+              workout logs. Built with: NuxtJs, VueJs, JavaScript.
+            </p>
+            <a href="https://fgzmmp-8080.csb.app/">Visit the app</a>
+            <a
+              href="https://codesandbox.io/p/devbox/vanta-retro-def-4lr944?file=%2Ftemplate%2Fworks.php%3A50%2C70"
+              >See project's code</a
+            >
+          </div>
+          <img
+            src="pics/isolated_realistic_laptop-removebg-preview.png"
+            alt="Laptop Image"
+          />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div id="slide3" class="work slide-container">
+          <div>
+            <span>GALLERY THEME</span>
+            <div class="stack" style="--stacks: 3">
+              <span style="--index: 0"><h2>Vantablack Gallery</h2></span>
+              <span style="--index: 1"><h2>Vantablack Gallery</h2></span>
+              <span style="--index: 2"><h2>Vantablack Gallery</h2></span>
+            </div>
+            <p>
+              Server rendered, progressive web application for online fitness &
+              health coaching. Built with: Php, JavaScript, Html and CSS.
+            </p>
+            <a href="https://llvs9g-8080.csb.app/">Visit the gallery</a>
+            <a
+              href="https://codesandbox.io/p/devbox/vanta-retro-def-4lr944?file=%2Ftemplate%2Fworks.php%3A50%2C70"
+              >See project's code</a
+            >
+          </div>
+          <img
+            src="pics/isolated_realistic_laptop-removebg-preview.png"
+            alt="Laptop Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>

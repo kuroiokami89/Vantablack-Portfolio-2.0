@@ -1,0 +1,59 @@
+<div id="top"></div>
+<button class="btn">
+  <div class="stack" style="--stacks: 3">
+    <span style="--index: 0"><i class="fa-solid fa-arrow-up"></i></span>
+    <span style="--index: 1"><i class="fa-solid fa-arrow-up"></i></span>
+    <span style="--index: 2"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+</button>
+
+<!-- DECOMENTARE SE SI VUOLE ABILITARE IL FILTRO GRAIN IN TUTTO IL SITO -->
+<!-- <div class="noise" style="background-image: url('pics/noise.png')"></div> -->
+
+<section class="home home-section-title">
+  {% include homepage-title.html %}
+</section>
+<section class="home blocco">{% include about.html %}</section>
+<section class="home blocco">{% include works.html %}</section>
+<section class="home">{% include skills.html %}</section>
+<section class="home">{% include footer.html %}</section>
+
+<script>
+  const button = document.querySelector(".btn");
+  const displayButton = () => {
+    window.addEventListener("scroll", () => {
+      console.log("Scroll position:", window.scrollY);
+
+      if (window.scrollY > 100) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    });
+  };
+
+  const scrollToTop = () => {
+    button.addEventListener("click", () => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+      console.log("Button clicked");
+    });
+  };
+
+  displayButton();
+  scrollToTop();
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(document).ready(function () {
+    showElementWithFadeIn(".home");
+  });
+</script>
