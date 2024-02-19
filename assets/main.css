@@ -553,14 +553,13 @@ button {
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  column-gap: 100px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  gap: 50px;
 }
 
 .about-me {
-  padding: 200px 50px 200px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #about > div {
@@ -569,7 +568,7 @@ button {
 
 .about-img {
   background-image: url(pics/me.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -579,12 +578,12 @@ button {
 }
 
 #about p {
-  margin-bottom: 30px;
+  margin-right: 250px;
 }
 
 #about p,
 #skills p {
-  font-size: 1.55rem;
+  font-size: 1.35rem;
 }
 
 /* FINE STILE ABOUT */
@@ -606,7 +605,7 @@ button {
 
 #skills p {
   max-width: 900px;
-  margin: 0 500px;
+  margin: 0 600px;
 }
 
 .skills-container {
@@ -771,3 +770,33 @@ button {
 }
 
 /* fine glitch */
+
+/* inizio sidebar */
+#anchor-sidebar {
+  overflow-x: hidden;
+  position: fixed;
+  top: 376px;
+  right: 4%;
+  z-index: 99;
+  font-size: 1.7rem;
+}
+
+#anchor-sidebar li {
+  border-right: 1px solid white;
+}
+
+#anchor-sidebar li:hover {
+  border-right: 3px solid white;
+}
+
+#anchor-sidebar .anchor {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* fine sidebar */

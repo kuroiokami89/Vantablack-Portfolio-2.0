@@ -4,12 +4,12 @@
 <link
   rel="stylesheet"
   type="text/css"
-  href="/vantaBlack/assets/main.css"
+  href="/VantaBlack-2.0/assets/main.css"
 />
 <link
   rel="stylesheet"
   type="text/css"
-  href="/vantaBlack/assets/mediaquery.css"
+  href="/VantaBlack-2.0/assets/mediaquery.css"
 />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link
@@ -55,44 +55,15 @@
     <title>VantaBlack Portfolio</title>
   </head>
   <body>
-    <div id="top"></div>
-<header id="header">
-  <div class="header-container">
-    <a href="#top" id="logo">
-      <span>VANTABLACK</span>
-    </a>
-    <div class="header-anchors">
-      <a href="#about">about</a>
-      <a href="#works">projects</a>
-      <a href="#skills">skills</a>
-      <a href="#footer">contact</a>
-    </div>
-  </div>
-</header>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script>
-  $(document).ready(function() {
-    var scroll_pos = 0;
-
-    $(document).scroll(function() {
-      scroll_pos = $(this).scrollTop();
-      
-      if (scroll_pos > 10) {
-        $('body').css('scroll-snap-type', 'none');
-        $("#header").css('background-color', 'rgba(0, 0, 0, 0.8)');
-        
-        setTimeout(function() {
-          // Re-enable snap scrolling after 1 second
-          $('body').css('scroll-snap-type', 'y mandatory');
-        }, 1000);
-      } else {
-        $('body').css('scroll-snap-type', 'y mandatory');
-        $("#header").css('background-color', 'transparent');
-      }
-    });
-  });
-</script> -->
+    <div id="anchor-sidebar">
+  <ul>
+    <li><a class="anchor" href="#top">0</a></li>
+    <li><a class="anchor" href="#about">1</a></li>
+    <li><a class="anchor" href="#works">2</a></li>
+    <li><a class="anchor" href="#skills">3</a></li>
+    <li><a class="anchor" href="#footer">4</a></li>
+  </ul>
+</div>
  <div id="top"></div>
 <button class="btn">
   <div class="stack" style="--stacks: 3">
@@ -156,12 +127,15 @@
         shape-rendering="auto"
       ></path>
     </svg>
-    >SCROLL DOWN
+    SCROLL DOWN
   </span>
 </div>
 
 </section>
 <section class="home blocco"><div id="about">
+  <div class="about-img" style="background-image: url('pics/me.jpg')">
+    <img class="me-img" src="pics/me.jpg" />
+  </div>
   <div class="about-me">
     <div class="stack" style="--stacks: 3">
       <span style="--index: 0"><h2>About</h2></span>
@@ -169,25 +143,18 @@
       <span style="--index: 2"><h2>About</h2></span>
     </div>
     <p>
-      Hey, my name is Charles Bruyerre and I use Sharlee as my nickname across
+      Hey, my name is Allushaj Sergio and I use Vantablack as my nickname across
       social medias. I’m a graphic designer, UX/UI designer & front-end web
-      developer from France. I’m also passionate about pop music and make
-      portraits and universes around what I listen to and I’m always curious to
-      learn more when it comes to new technologies and creative coding.
+      developer from Italy. I’m passionate about creating beautiful and
+      functional websites that provide a great user experience.
     </p>
-    <a class="btn" href="styles/files/CV SA 2023.pdf" download
-      >DOWNLOAD MY CV</a
-    >
-  </div>
-  <div class="about-img" style="background-image: url('pics/me.jpg')">
-    <img class="me-img" src="pics/me.jpg" />
   </div>
 </div>
 </section>
 <section class="home blocco"><div id="works">
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <!--       <div class="swiper-slide">
         <div class="work" id="slide1">
           <div class="slide-1-text">
             <div class="stack" style="--stacks: 3">
@@ -203,7 +170,7 @@
           </div>
           <div><img src="pics\YmYu.gif" /></div>
         </div>
-      </div>
+      </div> -->
       <div class="swiper-slide">
         <div id="slide2" class="work slide-container">
           <div>
@@ -213,16 +180,7 @@
               <span style="--index: 1"><h2>Portfolio Modern Template</h2></span>
               <span style="--index: 2"><h2>Portfolio Modern Template</h2></span>
             </div>
-            <p>
-              Server rendered, progressive web application for online fitness &
-              health coaching. Providing workout programs, nutritions plans,
-              workout logs. Built with: NuxtJs, VueJs, JavaScript.
-            </p>
             <a href="https://fgzmmp-8080.csb.app/">Visit the app</a>
-            <a
-              href="https://codesandbox.io/p/devbox/vanta-retro-def-4lr944?file=%2Ftemplate%2Fworks.php%3A50%2C70"
-              >See project's code</a
-            >
           </div>
           <img
             src="pics/isolated_realistic_laptop-removebg-preview.png"
@@ -239,15 +197,7 @@
               <span style="--index: 1"><h2>Vantablack Gallery</h2></span>
               <span style="--index: 2"><h2>Vantablack Gallery</h2></span>
             </div>
-            <p>
-              Server rendered, progressive web application for online fitness &
-              health coaching. Built with: Php, JavaScript, Html and CSS.
-            </p>
             <a href="https://llvs9g-8080.csb.app/">Visit the gallery</a>
-            <a
-              href="https://codesandbox.io/p/devbox/vanta-retro-def-4lr944?file=%2Ftemplate%2Fworks.php%3A50%2C70"
-              >See project's code</a
-            >
           </div>
           <img
             src="pics/isolated_realistic_laptop-removebg-preview.png"
@@ -346,12 +296,6 @@
           </div>
         </a>
       </div>
-    </div>
-    <div class="foot-footer">
-      <a href="https://codesandbox.io/" class="code">
-        <span>Hosted by</span>
-        <img src="pics/code.png" />
-      </a>
     </div>
   </div>
 </footer>

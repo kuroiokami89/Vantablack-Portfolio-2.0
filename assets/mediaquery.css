@@ -197,7 +197,8 @@
     margin-bottom: 20px !important;
   }
 
-  #header {
+  #header,
+  #anchor-sidebar {
     display: none;
   }
 
@@ -331,6 +332,10 @@
   .slide-1-text h2 {
     margin: 0;
     margin-bottom: 0 !important;
+  }
+
+  #about p {
+    margin-right: 0;
   }
 }
 
