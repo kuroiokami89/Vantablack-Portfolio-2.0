@@ -1,25 +1,8 @@
 <div id="works">
   <div class="swiper">
     <div class="swiper-wrapper">
-      <!--       <div class="swiper-slide">
-        <div class="work" id="slide1">
-          <div class="slide-1-text">
-            <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>Personal projects</h2></span>
-              <span style="--index: 1"><h2>Personal projects</h2></span>
-              <span style="--index: 2"><h2>Personal projects</h2></span>
-            </div>
-            <p>
-              I have built various projects to fit different aspects of the
-              client's business.
-            </p>
-            <a href="#slide2">Swipe left to see my projects</a>
-          </div>
-          <div><img src="pics\YmYu.gif" /></div>
-        </div>
-      </div> -->
-      <div class="swiper-slide">
-        <div id="slide2" class="work slide-container">
+      <div id="slide2" class="swiper-slide">
+        <div class="work slide-container">
           <div>
             <span>PORTFOLIO THEME</span>
             <div class="stack" style="--stacks: 3">
@@ -31,14 +14,11 @@
               >Visit the app</a
             >
           </div>
-          <img
-            src="pics/isolated_realistic_laptop-removebg-preview.png"
-            alt="Laptop Image"
-          />
+          <img src="pics/gallery1.jpg" />
         </div>
       </div>
-      <div class="swiper-slide">
-        <div id="slide3" class="work slide-container">
+      <div id="slide3" class="swiper-slide">
+        <div class="work slide-container">
           <div>
             <span>GALLERY THEME</span>
             <div class="stack" style="--stacks: 3">
@@ -48,10 +28,7 @@
             </div>
             <a href="https://llvs9g-8080.csb.app/">Visit the gallery</a>
           </div>
-          <img
-            src="pics/isolated_realistic_laptop-removebg-preview.png"
-            alt="Laptop Image"
-          />
+          <img src="pics/gallery2.jpg" />
         </div>
       </div>
     </div>
@@ -64,10 +41,15 @@
     const swiper = new Swiper(".swiper", {
       direction: "horizontal",
       loop: true,
+      spaceBetween: 0,
+      mousewheel: false,
+      parallax: true,
+      speed: 600,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      nested: false, // Allow page scrolling when swiper reaches its boundaries
     });
   });
 </script>

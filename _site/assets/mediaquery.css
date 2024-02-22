@@ -60,7 +60,6 @@
 
   #skills {
     flex-direction: column;
-    padding: 0px;
   }
 
   .skills-text {
@@ -77,7 +76,6 @@
     flex-direction: column;
   }
 
-  #skills,
   .about-me,
   .work {
     padding: 30px;
