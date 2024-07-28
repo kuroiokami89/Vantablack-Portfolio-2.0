@@ -316,24 +316,12 @@
     position: unset !important;
   }
 
-  #slide1 {
-    flex-direction: column;
-    text-align: left;
-    align-items: unset;
-    row-gap: 0;
-  }
-
-  #slide1 p {
-    margin: 0px;
-  }
-
-  .slide-1-text h2 {
-    margin: 0;
-    margin-bottom: 0 !important;
-  }
-
   #about p {
     margin-right: 0;
+  }
+
+  .about-me {
+    margin-top: 50px;
   }
 }
 
