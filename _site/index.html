@@ -11,6 +11,16 @@
   type="text/css"
   href="/Vantablack-Portfolio-2.0/assets/mediaquery.css"
 />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/Vantablack-Portfolio-2.0/assets/effects.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="/Vantablack-Portfolio-2.0/assets/fonts.css"
+/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link
   rel="stylesheet"
@@ -73,7 +83,7 @@
   </div>
 </button>
 
-<!-- DECOMENTARE SE SI VUOLE ABILITARE IL FILTRO GRAIN IN TUTTO IL SITO -->
+<!-- DECOMENTARE SE SI VUOLE ABILITARE IL FILTRO GRAIN NEL SITO -->
 <!-- <div class="noise" style="background-image: url('pics/noise.png')"></div> -->
 
 <section class="home home-section-title">
@@ -134,7 +144,7 @@
 </section>
 <section class="home blocco"><div id="about">
   <div class="about-img" style="background-image: url('pics/me.jpg')">
-    <img class="me-img" src="pics/me.jpg" />
+    <img alt="Me" class="me-img" src="pics/me.jpg" />
   </div>
   <div class="about-me">
     <div class="stack" style="--stacks: 3">
@@ -164,12 +174,12 @@
           <div>
             <span>PORTFOLIO THEME</span>
             <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>Portfolio Modern Template</h2></span>
-              <span style="--index: 1"><h2>Portfolio Modern Template</h2></span>
-              <span style="--index: 2"><h2>Portfolio Modern Template</h2></span>
+              <span style="--index: 0"><h2>VANTABLACK WEBSITE</h2></span>
+              <span style="--index: 1"><h2>VANTABLACK WEBSITE</h2></span>
+              <span style="--index: 2"><h2>VANTABLACK WEBSITE</h2></span>
             </div>
-            <a href="https://kuroiokami89.github.io/Portfolio-Vantablack/"
-              >Visit the app</a
+            <a href="https://vanta-black-website.vercel.app/"
+              >VISIT THE PORTFOLIO</a
             >
           </div>
         </div>
@@ -195,18 +205,23 @@
       <div
         id="slide4"
         class="swiper-slide"
-        style="background-image: url('pics/kronos.jpg')"
+        style="
+          background-image: url('pics/OOZOO.gif');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
       >
         <div class="opacity-layer"></div>
         <div class="work slide-container">
           <div>
-            <span>GALLERY THEME</span>
+            <span>E-COMMERCE WEBSITE</span>
             <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>Vantablack Gallery</h2></span>
-              <span style="--index: 1"><h2>Vantablack Gallery</h2></span>
-              <span style="--index: 2"><h2>Vantablack Gallery</h2></span>
+              <span style="--index: 0"><h2>KRONOS - ECOMMERCE</h2></span>
+              <span style="--index: 1"><h2>KRONOS - ECOMMERCE</h2></span>
+              <span style="--index: 2"><h2>KRONOS - ECOMMERCE</h2></span>
             </div>
-            <a href="https://llvs9g-8080.csb.app/">Visit the gallery</a>
+            <a href="https://llvs9g-8080.csb.app/">VISIT THE WEBSITE</a>
           </div>
         </div>
       </div>
@@ -227,6 +242,10 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      autoplay: {
+        delay: 3000, // Time between slides in milliseconds (3 seconds here)
+        disableOnInteraction: false, // Autoplay will not stop after user interactions like swiping
       },
       nested: false, // Allow page scrolling when swiper reaches its boundaries
     });
@@ -272,7 +291,14 @@
   </div>
 </div>
 </section>
-<section class="home"><footer id="footer">
+<section class="home"><footer
+  id="footer"
+  style="
+    background: url('pics/Footer.gif') center / cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+  "
+>
   <div class="footer-container">
     <div class="footer-contacts">
       <a id="anchor-top" href="#top">
