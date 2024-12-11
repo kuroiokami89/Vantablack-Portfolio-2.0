@@ -704,3 +704,30 @@ button {
 }
 
 /* fine sidebar */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Occupies the full viewport height */
+  box-sizing: border-box; /* Ensures padding is included in the height calculation */
+}
+
+.row-projects {
+  display: flex;
+  flex: 1; /* Ensures each row takes up 50% of the height of #projects */
+}
+
+.project {
+  padding: 20px;
+  flex: 1; /* Ensures each project takes up equal space within the row */
+  background-size: cover; /* Ensures background images cover the entire element */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.noise {
+  background-image: url("pics/noise.png");
+}

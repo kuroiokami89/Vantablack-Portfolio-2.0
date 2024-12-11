@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link
   rel="stylesheet"
@@ -75,13 +78,13 @@
   </ul>
 </div>
  <div id="top"></div>
-<button class="btn">
+<!-- <button class="btn">
   <div class="stack" style="--stacks: 3">
     <span style="--index: 0"><i class="fa-solid fa-arrow-up"></i></span>
     <span style="--index: 1"><i class="fa-solid fa-arrow-up"></i></span>
     <span style="--index: 2"><i class="fa-solid fa-arrow-up"></i></span>
   </div>
-</button>
+</button> -->
 
 <!-- DECOMENTARE SE SI VUOLE ABILITARE IL FILTRO GRAIN NEL SITO -->
 <!-- <div class="noise" style="background-image: url('pics/noise.png')"></div> -->
@@ -148,63 +151,24 @@
   </div>
   <div class="about-me">
     <div class="stack" style="--stacks: 3">
-      <span style="--index: 0"><h2>About</h2></span>
-      <span style="--index: 1"><h2>About</h2></span>
-      <span style="--index: 2"><h2>About</h2></span>
+      <span style="--index: 0"><h2>About me</h2></span>
+      <span style="--index: 1"><h2>About me</h2></span>
+      <span style="--index: 2"><h2>About me</h2></span>
     </div>
     <p>
-      Hey, my name is Allushaj Sergio and I use Vantablack as my nickname across
-      social medias. I’m a graphic designer, UX/UI designer & front-end web
-      developer from Italy. I’m passionate about creating beautiful and
-      functional websites that provide a great user experience.
+      Hi, I’m Sergio Allushaj, also known as Vantablack on social media. I’m a
+      graphic designer, UX/UI designer, and junior front-end web developer from
+      Italy. With experience in HTML, CSS, JavaScript, PHP, React, and SQL, I’m
+      passionate about crafting beautiful, functional websites that deliver
+      exceptional user experiences.
     </p>
   </div>
 </div>
 </section>
-<section class="home blocco"><div id="works">
-  <div class="swiper">
-    <div class="swiper-wrapper">
+<section class="home blocco"><div id="projects">
+    <div class="row-projects">
       <div
-        id="slide2"
-        class="swiper-slide"
-        style="background-image: url('pics/gallery1.jpg')"
-      >
-        <div class="opacity-layer"></div>
-        <div class="work slide-container">
-          <div>
-            <span>PORTFOLIO THEME</span>
-            <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>VANTABLACK WEBSITE</h2></span>
-              <span style="--index: 1"><h2>VANTABLACK WEBSITE</h2></span>
-              <span style="--index: 2"><h2>VANTABLACK WEBSITE</h2></span>
-            </div>
-            <a href="https://vanta-black-website.vercel.app/"
-              >VISIT THE PORTFOLIO</a
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        id="slide3"
-        class="swiper-slide"
-        style="background-image: url('pics/gallery2.jpg')"
-      >
-        <div class="opacity-layer"></div>
-        <div class="work slide-container">
-          <div>
-            <span>GALLERY THEME</span>
-            <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>Vantablack Gallery</h2></span>
-              <span style="--index: 1"><h2>Vantablack Gallery</h2></span>
-              <span style="--index: 2"><h2>Vantablack Gallery</h2></span>
-            </div>
-            <a href="https://llvs9g-8080.csb.app/">Visit the gallery</a>
-          </div>
-        </div>
-      </div>
-      <div
-        id="slide4"
-        class="swiper-slide"
+        class="project p-1"
         style="
           background-image: url('pics/OOZOO.gif');
           background-position: center;
@@ -212,45 +176,29 @@
           background-repeat: no-repeat;
         "
       >
-        <div class="opacity-layer"></div>
-        <div class="work slide-container">
-          <div>
-            <span>E-COMMERCE WEBSITE</span>
-            <div class="stack" style="--stacks: 3">
-              <span style="--index: 0"><h2>KRONOS - ECOMMERCE</h2></span>
-              <span style="--index: 1"><h2>KRONOS - ECOMMERCE</h2></span>
-              <span style="--index: 2"><h2>KRONOS - ECOMMERCE</h2></span>
-            </div>
-            <a href="https://llvs9g-8080.csb.app/">VISIT THE WEBSITE</a>
-          </div>
-        </div>
+        <span>E-COMMERCE</span>
+        <h2>KRONOS SHOP</h2>
+      </div>
+      <div
+        class="project p-2"
+        style="background-image: url('pics/gallery1.jpg')"
+      >
+        <span>E-COMMERCE</span>
+        <h2>KRONOS SHOP</h2>
       </div>
     </div>
+    <div class="row-projects">
+      <div
+        class="project p-3"
+        style="background-image: url('pics/gallery2.jpg')"
+      >
+        <span>E-COMMERCE</span>
+        <h2>KRONOS SHOP</h2>
+      </div>
+      <div class="project p-4"></div>
+    </div>
   </div>
-  <div class="swiper-pagination"></div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      loop: true,
-      spaceBetween: 0,
-      mousewheel: false,
-      parallax: true,
-      speed: 600,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000, // Time between slides in milliseconds (3 seconds here)
-        disableOnInteraction: false, // Autoplay will not stop after user interactions like swiping
-      },
-      nested: false, // Allow page scrolling when swiper reaches its boundaries
-    });
-  });
-</script>
 </section>
 <section class="home"><div id="skills">
   <div class="opacity-layer"></div>
@@ -286,6 +234,22 @@
         <span style="--index: 0"><i class="fa-brands fa-js"></i></span>
         <span style="--index: 1"><i class="fa-brands fa-js"></i></span>
         <span style="--index: 2"><i class="fa-brands fa-js"></i></span>
+      </div>
+      <div class="stack" style="--stacks: 3">
+        <span style="--index: 0"><i class="fa-brands fa-figma"></i></span>
+        <span style="--index: 1"><i class="fa-brands fa-figma"></i></span>
+        <span style="--index: 2"><i class="fa-brands fa-figma"></i></span>
+      </div>
+      <div class="stack" style="--stacks: 3">
+        <span style="--index: 0"
+          ><i class="fa-brands fa-wordpress-simple"></i
+        ></span>
+        <span style="--index: 1"
+          ><i class="fa-brands fa-wordpress-simple"></i
+        ></span>
+        <span style="--index: 2"
+          ><i class="fa-brands fa-wordpress-simple"></i
+        ></span>
       </div>
     </div>
   </div>
