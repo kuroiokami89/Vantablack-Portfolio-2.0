@@ -621,7 +621,7 @@ button {
 
 #skills p {
   max-width: 900px;
-  margin: 0 600px;
+  margin: 0 650px;
 }
 
 .skills-container {
@@ -720,14 +720,44 @@ button {
 .project {
   padding: 20px;
   flex: 1; /* Ensures each project takes up equal space within the row */
-  background-size: cover; /* Ensures background images cover the entire element */
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Ensures content is aligned to the bottom */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Ensures content does not spill outside the boundaries */
 }
 
-.noise {
-  background-image: url("pics/noise.png");
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: opacity 0.3s;
+  opacity: 0.4;
+}
+
+.project span,
+.project h2 {
+  position: relative;
+  z-index: 1; /* Ensures text stays above the image */
+  color: white; /* Ensures the text is visible */
+  margin: 0;
+}
+
+.project span {
+  font-family: "Share Tech Mono", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+}
+
+.project:hover img {
+  opacity: 1; /* Makes the image fully visible when hovered */
 }
