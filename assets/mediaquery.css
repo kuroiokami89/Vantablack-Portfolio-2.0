@@ -206,12 +206,10 @@
   }
 
   .row-projects {
-    flex: unset;
     flex-direction: column;
   }
 
   .project {
-    flex: unset;
     height: 50vh !important;
   }
 }
