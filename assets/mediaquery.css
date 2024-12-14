@@ -14,17 +14,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  body {
-    scroll-snap-type: none; /* Disable snap scroll for mobile devices */
-    height: 100%;
-  }
-
-  .home {
-    height: auto; /* Remove the fixed height for sections on mobile devices */
-    width: auto; /* Remove the minimum height for sections on mobile devices */
-    scroll-snap-align: none; /* Remove snap alignment for mobile devices */
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
@@ -38,10 +27,6 @@
   #about {
     width: 100%;
     height: 100%;
-  }
-
-  #about {
-    padding: 100px;
   }
 
   .project-list {
@@ -84,6 +69,7 @@
   .me-img {
     display: block;
     width: 100%;
+    height: 100%;
   }
 
   #slide1 p {
@@ -100,6 +86,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    scroll-snap-type: none; /* Disable snap scroll for mobile devices */
+    height: 100%;
+  }
+
+  .home {
+    height: auto; /* Remove the fixed height for sections on mobile devices */
+    width: auto; /* Remove the minimum height for sections on mobile devices */
+    scroll-snap-align: none; /* Remove snap alignment for mobile devices */
+  }
+
   h1 {
     font-size: 3.5rem !important;
   }
@@ -304,9 +301,9 @@
     justify-content: center;
   }
 
-  .blocco {
+  /* .blocco {
     margin-bottom: 100px !important;
-  }
+  } */
 
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     margin-bottom: 0px;
@@ -318,10 +315,6 @@
 
   #about p {
     margin-right: 0;
-  }
-
-  .about-me {
-    margin-top: 50px;
   }
 }
 
