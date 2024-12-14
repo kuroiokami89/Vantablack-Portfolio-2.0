@@ -759,5 +759,5 @@ button {
 }
 
 .project:hover img {
-  opacity: 1; /* Makes the image fully visible when hovered */
+  opacity: 0.6; /* Makes the image fully visible when hovered */
 }
